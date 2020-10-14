@@ -1,3 +1,9 @@
 body {
-  
+  padding-top: 40px;
+  font-weight: 'Courier New', monspace;
+  text-align: center;
+}
+
+#target {
+  font-size: 48px;
 }
