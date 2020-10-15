@@ -1,6 +1,8 @@
+@charset "utf-8";
+
 body {
   padding-top: 40px;
-  font-weight: 'Courier New', monspace;
+  font-weight: 'Courier New', 'monspace';
   text-align: center;
 }
 
