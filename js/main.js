@@ -25,11 +25,14 @@ const target = document.getElementById('target');
 setWord();
 
   document.addEventListener('keydown', e => {
-    if (e.key === word[loc]) {
-      loc++;
+    if (e.key !== word[loc]) {
+      return;  //間違っていたときの処理
+    } 
+    
+    loc++;
 
-      target.textContent = '_'.repeat(loc) + word.substring(loc);  //repeatは繰り返す  //substringは()以降の文字を取り出してくれる
-    }
+    target.textContent = '_'.repeat(loc) + word.substring(loc);  //repeatは繰り返す  //substringは()以降の文字を取り出してくれる
+    
 
     if (loc === word.length) {
       if (words.length === 0) {
@@ -40,6 +43,6 @@ setWord();
     
       setWord();
     }
-
+   
   });
 }
