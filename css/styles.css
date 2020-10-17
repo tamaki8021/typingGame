@@ -9,3 +9,9 @@ body {
 #target {
   font-size: 48px;
 }
+
+#result {
+  font-size: 90px;
+  font-weight: bold;
+  color: gold;
+}
